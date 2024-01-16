@@ -266,7 +266,7 @@
 
     <section class="add-mark container">
       <h2 class="add-mark__title">Додати оцінки</h2>
-      <ul class="added-marks">
+      <ul class="added-marks js-added-marks">
         <li class="added-marks-item">
           <div class="">
             <span>Предмет: </span>
@@ -308,13 +308,13 @@
         </div> -->
 
         <div class="add-mark__input-wrapper subject">
-          <label for="new-subject">Запишіть назву предмету</label>
-          <input class="add-mark__input input" type="text" id="new-subject" />
+          <label for="newSubject">Запишіть назву предмету</label>
+          <input class="add-mark__input input" type="text" name="newSubject" />
         </div>
 
         <div class="add-mark__input-wrapper">
-          <label for="new-date">Оберіть дату</label>
-          <input class="add-mark__input input" type="date" id="new-date" />
+          <label for="newDate">Оберіть дату</label>
+          <input class="add-mark__input input" type="date" name="newDate" />
         </div>
 
         <div class="add-mark__input-wrapper">
@@ -322,8 +322,9 @@
           <input
             class="add-mark__input input"
             type="text"
-            id="mark"
+            name="mark"
             pattern="^[1-9]|1[0-2]$"
+            required
           />
         </div>
         <button class="add-mark__submit btn" type="submit">Додати</button>
