@@ -32,7 +32,7 @@
 }
 
 .add-mark__input {
-  width: 100%;
+  padding-right: 0;
 }
 
 .add-mark__submit {

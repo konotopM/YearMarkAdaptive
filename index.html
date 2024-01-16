@@ -298,24 +298,33 @@
       </ul>
 
       <form class="add-mark__form" id="add-mark__form">
-        <div class="add-mark__input-wrapper visually-hidden">
+        <!-- <div class="add-mark__input-wrapper visually-hidden">
           <label for="new-subject">Оберіть предмет</label>
-          <select class="input" name="subject" id="subject"></select>
-        </div>
+          <select
+            class="add-mark__select input"
+            name="subject"
+            id="subject"
+          ></select>
+        </div> -->
 
         <div class="add-mark__input-wrapper subject">
           <label for="new-subject">Запишіть назву предмету</label>
-          <input class="input" type="text" id="new-subject" />
+          <input class="add-mark__input input" type="text" id="new-subject" />
         </div>
 
         <div class="add-mark__input-wrapper">
           <label for="new-date">Оберіть дату</label>
-          <input class="input" type="date" id="new-date" />
+          <input class="add-mark__input input" type="date" id="new-date" />
         </div>
 
         <div class="add-mark__input-wrapper">
           <label for="mark">Запишіть оцінку</label>
-          <input class="input" type="text" id="mark" pattern="^[1-9]|1[0-2]$" />
+          <input
+            class="add-mark__input input"
+            type="text"
+            id="mark"
+            pattern="^[1-9]|1[0-2]$"
+          />
         </div>
         <button class="add-mark__submit btn" type="submit">Додати</button>
       </form>
